@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Team Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
     <header>
-        <h1>Pokedex</h1>
-        <input type="text" id="search" placeholder="Digite o nome do Pokémon..." onkeyup="searchPokemon()">
+      <h1>Construa Seu Time Pokémon</h1>
+      <p>Crie um time competitivo com sinergia</p>
     </header>
 
-    <main>
-        <div id="pokemon-info"></div>
-    </main>
+    <section class="search-section">
+      <div class="search-bar">
+        <input type="text" id="pokemon-search" placeholder="Pesquise seu Pokémon...">
+        <button>Pesquisar</button>
+      </div>
+      <div class="pokemon-info">
+        <!-- As informações do Pokémon vão aparecer aqui -->
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="team-section">
+      <h2>Seu Time Pokémon</h2>
+      <div class="team-slots">
+        <div class="team-slot">Slot 1</div>
+        <div class="team-slot">Slot 2</div>
+        <div class="team-slot">Slot 3</div>
+        <div class="team-slot">Slot 4</div>
+        <div class="team-slot">Slot 5</div>
+        <div class="team-slot">Slot 6</div>
+      </div>
+      <button id="auto-team">Auto Team</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
